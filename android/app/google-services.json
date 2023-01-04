@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "42911666915",
+    "firebase_url": "https://fitbody-368404-default-rtdb.firebaseio.com",
+    "project_id": "fitbody-368404",
+    "storage_bucket": "fitbody-368404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42911666915:android:29d0bfe69e4e0b27df6bd6",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42911666915-uk45dv72c8kbfk6relv2cibr50h7bng4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0R4AvaGodhpWRtP2kWFqY-AfXJAovnSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42911666915-uk45dv72c8kbfk6relv2cibr50h7bng4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
