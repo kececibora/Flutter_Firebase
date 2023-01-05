@@ -5,6 +5,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 
+import 'Queries.dart';
 import 'Users.dart';
 
 void main() async {
@@ -86,9 +87,26 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  Future<void> search() async {
+    var searched = refUsers.orderByChild("user_name").equalTo("Şafak");
+
+    searched.onValue.listen((event) {
+      var getInfo = event.snapshot.value as Map;
+      if (getInfo != null) {
+        getInfo.forEach((key, value) {
+          var getUser = Users.fromJson(value);
+          print("*********");
+          print("User Key : ${key} ");
+          print("User Name : ${getUser.user_name} ");
+          print("User Age : ${getUser.user_age} ");
+        });
+      }
+    });
+  }
+
   @override
   void initState() {
-    getAllOnce();
+    ValuedData();
     super.initState();
   }
 
